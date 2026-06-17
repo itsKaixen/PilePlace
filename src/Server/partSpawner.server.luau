@@ -1,8 +1,8 @@
--- Vars
-local workspace = game:WaitForChild("Workspace")
--- local part = workspace:WaitForChild("SpawnPart")
+-- Variables
 
--- Functions
+local workspace = game:WaitForChild("Workspace")
+
+---------------------------------------- Functions
 
 local function Spawn(size: number)
 	local part = Instance.new("Part")
@@ -38,7 +38,9 @@ local function Countdown(part: Part, Label: TextLabel)
 	part:Destroy()
 end
 
--- Running
+----------------------------------------
+
+---------------------------------------- Running
 
 local part = Spawn(5)
 local text = CreateGUI(part, "10")
